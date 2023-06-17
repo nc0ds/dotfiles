@@ -1,12 +1,12 @@
 window:
-  padding:
-    x: 10
-    y: 10
+  dimensions:
+    columns: 120
+    lines: 40
   class:
     instance: Alacritty
     general: Alacritty
   decorations: none
-  opacity: 0.8
+  opacity: 1
 
 scrolling:
   history: 10000
@@ -28,34 +28,34 @@ font:
 
 draw_bold_text_with_bright_colors: true
 
-# Colors (Gotham)
+# Midnight Haze theme
 colors:
   # Default colors
   primary:
-    background: '0x0a0f14'
-    foreground: '0x98d1ce'
+    background: '0x0c0c16'
+    foreground: '0xd8dee9'
 
   # Normal colors
   normal:
-    black: '0x0a0f14'
-    red: '0xc33027'
-    green: '0x26a98b'
-    yellow: '0xedb54b'
-    blue: '0x195465'
-    magenta: '0x4e5165'
-    cyan: '0x33859d'
-    white: '0x98d1ce'
+    black:   '0x2c2c3d'
+    red:     '0xff6e6e'
+    green:   '0x9ec875'
+    yellow:  '0xffa759'
+    blue:    '0x70a7d4'
+    magenta: '0xd291e0'
+    cyan:    '0x96e0e0'
+    white:   '0xd8dee9'
 
   # Bright colors
   bright:
-    black: '0x10151b'
-    red: '0xd26939'
-    green: '0x081f2d'
-    yellow: '0x245361'
-    blue: '0x093748'
-    magenta: '0x888ba5'
-    cyan: '0x599caa'
-    white: '0xd3ebe9'
+    black:   '0x414166'
+    red:     '0xff8d8d'
+    green:   '0xb3d987'
+    yellow:  '0xffc57f'
+    blue:    '0x9bb3d3'
+    magenta: '0xffa1ff'
+    cyan:    '0x9cd8d8'
+    white:   '0xffffff'
 
 cursor:
   style:

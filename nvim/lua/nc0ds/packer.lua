@@ -55,4 +55,9 @@ require('packer').startup(function(use)
 
 	-- Themes
 	use 'whatyouhide/vim-gotham'
+	use 'patternina/haze.nvim'
+	use {
+		'daltonmenezes/aura-theme',
+		rtp = 'packages/neovim'
+	}
 end)

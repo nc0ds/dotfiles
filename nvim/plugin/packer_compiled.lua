@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/nc0ds/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["aura-theme"] = {
+    loaded = true,
+    path = "/home/nc0ds/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim",
+    url = "https://github.com/daltonmenezes/aura-theme"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/nc0ds/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     needs_bufread = false,
     path = "/home/nc0ds/.local/share/nvim/site/pack/packer/opt/emmet-vim",
     url = "https://github.com/mattn/emmet-vim"
+  },
+  ["haze.nvim"] = {
+    loaded = true,
+    path = "/home/nc0ds/.local/share/nvim/site/pack/packer/start/haze.nvim",
+    url = "https://github.com/patternina/haze.nvim"
   },
   ["indent-blankline.nvim"] = {
     config = { "\27LJ\2\2B\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\21indent_blankline\frequire\0" },
@@ -210,6 +220,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Runtimepath customization
+time([[Runtimepath customization]], true)
+vim.o.runtimepath = vim.o.runtimepath .. ",/home/nc0ds/.local/share/nvim/site/pack/packer/start/aura-theme/packages/neovim"
+time([[Runtimepath customization]], false)
 -- Setup for: emmet-vim
 time([[Setup for emmet-vim]], true)
 try_loadstring("\27LJ\2\2=\0\0\2\0\4\0\0056\0\0\0009\0\1\0'\1\3\0=\1\2\0K\0\1\0\n<C-a>\26user_emmet_leader_key\6g\bvim\0", "setup", "emmet-vim")
